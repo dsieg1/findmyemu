@@ -1,8 +1,19 @@
+// React, react router, redux imports
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import {Provider} from "react-redux";
+
+// page imports
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import store from "./store";
+
+// Render Page
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+);
 registerServiceWorker();
