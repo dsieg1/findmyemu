@@ -8,3 +8,11 @@
   line-height: 59px;
   background-color: $gray-300;
 }
+.breadcrumb{
+  margin-bottom: 0;
+}
+#content-wrapper{
+  .container{
+    @extend .mt-4;
+  }
+}
