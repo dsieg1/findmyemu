@@ -1,0 +1,1 @@
+export const SET_SQUARES = 'SET_SQUARES';
